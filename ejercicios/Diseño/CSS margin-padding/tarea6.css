@@ -1,0 +1,29 @@
+/* 
+fichero css con formatos de padding
+alumno: ALEJANDRO MÁRQUEZ ARAGONÉS
+fecha: 22/10/20
+*/
+body {
+  background-color: #c9e5c8;
+}
+
+h1 {
+  margin: 1% 1%;
+  background-color: #57657E;
+  color: white;
+}
+
+p {
+  margin: 3% 3%;
+  padding-bottom: 1%;
+  background-color: #5c9196;
+  color: white;
+}
+
+div {
+  margin-left: 200px;
+  padding-bottom: 5%;
+  width: 80%;
+  height: auto;
+  background-color: #a580a4;
+}

@@ -1,0 +1,65 @@
+@import url("includes/css/style.css");
+
+:root {
+    --grisOscuro: #3B3B3B;
+    --blancoOscuro: #F8F8F8;
+    --blanco: #FEFEFE;
+    --mainFont: 'Raleway', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+}
+
+#clearfix {
+    float: none;
+    clear: both;
+}
+
+#guia {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--grisOscuro);
+}
+
+#guia h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    text-shadow: 2px 2px #ccc;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.content p {
+    width: 70%;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 40px;
+    float: left;
+}
+
+.content a {
+    float: right;
+}
+
+.content a img {
+    width: 15vh;
+    filter: contrast(30%);
+}
+
+.content a:hover img {
+    filter: contrast(100%);
+}
+
+.content ol {
+    margin-top: 20px;
+}
+
+.content ol li {
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+}
