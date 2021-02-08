@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <title>Perfil</title>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header><a href="index.html">
+                    <h1><span>ALEX MÁRQUEZ</span>
+                        <br>
+                        WEB DEVELOPER
+                    </h1>
+                    <img src="mmedia/Logo Web.png" alt="logo">
+                </a>
+            </header>
+            <!-- OVERLAY -->
+            <div id="myNav" class="overlay">
+
+                <!-- Botón para cerrar el overlay -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Contenido del overlay -->
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="perfil.html">PERFIL PROFESIONAL</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="guia.html">GUIA DE ESTILOS</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+
+            <!-- MENÚ LATERAL HAMBURGUESA (SÓLO EN RESPONSIVE) -->
+            <div id="sticky-menu">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+            <!-- 
+                SECCIÓN PERFIL
+            -->
+
+            <section id="perfil">
+                <h2>Perfil profesional</h2><br>
+                <h3>FORMACIÓN ACADÉMICA</h3>
+                <div class="curso">
+                    <h4><a
+                            href="https://www.cesurformacion.com/formacion-profesional/ciclo-tecnico-superior-en-desarrollo-de-aplicaciones-web-dual/"
+                            target="_blank" title="Pulsa para más INFO"><!--<i class="fa fa-hand-peace-o" style="font-size:24px">--></i>Ciclo Formativo Grado Superior
+                            Desarrollo de Aplicaciones Web (DAW)</a></h4>
+                </div>
+                <article>
+                    <div class="categories">
+                        <div class="list-name"><span class="title">Conocimientos prácticos de Back-end:</span>
+                            <ul>
+                                <li><span class="devicons devicons-java"></span> Java</li>
+                                <li><span class="devicons devicons-database"></span> Lenguajes de bases de datos
+                                    relacionales (MYSQL).</li>
+                                <li><span class="devicons devicons-php"></span> Entorno Servidor con PHP y MYSQL.</li>
+                            </ul>
+                        </div>
+                        <div class="list-name"><span class="title">Conocimientos front-end de HTML/CSS:</span>
+                            <ul>
+                                <li><span class="devicons devicons-javascript_badge"></span> Entorno cliente con
+                                    Javascript.
+                                </li>
+                                <li><span class="devicons devicons-html5_multimedia"></span> Desarrollo de interfaces
+                                    web mediante Adobe XD.</li>
+                            </ul>
+                        </div>
+                        <div class="list-name">
+                            <span class="title"> Uso de repositorios Git y Github:</span>
+                            <ul>
+                                <li><span class="devicons devicons-git"></span>Manejo de repositorios locales y remotos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <span>Alex Márquez - Web Developer &copy;</span>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

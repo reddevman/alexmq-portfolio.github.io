@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/perfil.css">
+    <link rel="stylesheet" href="includes/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header><a href="index.html">
+                    <h1><span>ALEX MÁRQUEZ</span>
+                        <br>
+                        WEB DEVELOPER
+                    </h1>
+                    <img src="mmedia/Logo Web.png" alt="logo">
+                </a>
+            </header>
+            <!-- OVERLAY -->
+            <div id="myNav" class="overlay">
+
+                <!-- Botón para cerrar el overlay -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Contenido del overlay -->
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="perfil.html">PERFIL PROFESIONAL</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="guia.html">GUIA DE ESTILOS</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+
+            <!-- MENÚ LATERAL HAMBURGUESA (SÓLO EN RESPONSIVE) -->
+            <div id="sticky-menu">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+            <!--
+                SECCIÓN PORTFOLIO
+            -->
+
+            <section id="portfolio">
+                <h2>Portfolio</h2><br>
+                <div class="categories">
+                    <div class="tabla">
+                        <div class="fila1">
+                            <div class="css">
+                                <a href="ejercicios/Diseño/" target="_blank"><img src="mmedia/css-icon.png"
+                                        alt="icono CSS" title="Pulsa para acceder a las carpetas">
+                                        <h3>DISEÑO DE INTERFACES WEB</h3>
+
+                                </a>
+                            </div>
+
+                            <div id="espacio"></div>
+
+                            <div class="cliente">
+                                <a href="ejercicios/Entorno-Cliente/" target="_blank"><img src="mmedia/clientJs.png"
+                                        alt="logo cliente javascript" title="Pulsa para acceder a las carpetas">
+                                        <h3>ENTORNO CLIENTE</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fila2">
+                            <a href="https://github.com/reddevman/Diseno-Interfaces-Web-Ejercicios" target="_blank"
+                                title="Enlace a GITHUB"><i class="fab fa-github"></i></a>
+
+                            <div id="espacio"></div>
+
+                            <a href="https://github.com/reddevman/JS" target="_blank" title="Enlace a GITHUB"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="apps-web">
+                    <a href="ejercicios/Aplicaciones-Web/" target="_blank" title="Pulsar para ver los PDF">
+                        <img src="mmedia/apps.png" alt="aplicaciones web">
+                        <h3>APLICACIONES WEB</h3>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <span>Alex Márquez - Web Developer &copy;</span>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

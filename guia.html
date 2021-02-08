@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/guia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <title>Guía de estilo</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header><a href="index.html">
+                    <h1><span>ALEX MÁRQUEZ</span>
+                        <br>
+                        WEB DEVELOPER
+                    </h1>
+                    <img src="mmedia/Logo Web.png" alt="logo">
+                </a>
+            </header>
+            <!-- OVERLAY -->
+            <div id="myNav" class="overlay">
+
+                <!-- Botón para cerrar el overlay -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Contenido del overlay -->
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="perfil.html">PERFIL PROFESIONAL</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="guia.html">GUIA DE ESTILOS</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+
+            <!-- MENÚ LATERAL HAMBURGUESA (SÓLO EN RESPONSIVE) -->
+            <div id="sticky-menu">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+            <!--
+                SECCIÓN GUÍA DE ESTILO
+            -->
+
+            <section id="guia">
+                <h2>Guía de estilos</h2><br>
+                <div class="content">
+                    <p>
+                        La <strong>guía de estilo</strong> es un documento previo a la creación de una página web.<br>
+                        En ella se establecen las <strong>directrices</strong> y el camino a seguir respecto al formato
+                        del texto, las imágenes, el uso de los colores y las tipografías, logotipos, etc.<br>
+                        Es un documento <strong>imprescindible</strong>, sobre todo en grandes empresas, que marca la <strong>tendencia
+                        visual</strong> y la <strong>homogeneidad</strong> que tendrán todos los trabajos que se presenten al cliente.<br>
+                        Una guía de estilo se compondrá por lo general de los siguientes elementos:
+                    </p>
+                    <a href="pdf/DIWEB - Guía de estilo.pdf" title="Pulsa para ver el pdf" target="_blank"><img src="mmedia/pdf.png" alt="icono pdf"></a>
+                    <div id="clearfix"></div>
+                    <ol>
+                        <li>Hojas de <strong>color</strong>.</li>
+                        <li><strong>Fuentes</strong> y tipografías que se van a usar.</li>
+                        <li>Cuadrícula de <strong>elementos</strong> de la web.</li>
+                        <li><strong>Estructura</strong> de navegación.</li>
+                        <li><strong>Imágenes</strong>, edición que necesiten, galerías, etc.</li>
+                        <li>Indicaciones sobre el uso de <strong>otros elementos gráficos</strong>.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <span>Alex Márquez - Web Developer &copy;</span>
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>
