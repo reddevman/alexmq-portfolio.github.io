@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./includes/style.css" />
+    <title>Elementos Multimedia</title>
+  </head>
+  <body>
+      <h1>
+          ELEMENTOS DE AUDIO Y VIDEO EN HTML
+      </h1>
+      <div class="audio-wrapper">
+          <h2>AUDIO</h2>
+          <audio id="myAudio" controls src="./includes/audio/bensound-ukulele.mp3"></audio>
+          <button onclick="audioDuration()">PULSAR</button>
+          <span>Pulsa el botón para ver la duración del audio en milisegundos.</span>
+          <span id="duration"></span>
+          <button onclick="audioLocation()">PULSAR</button>
+          <span>Pulsa el botón para ver la ubicación del audio.</span>
+          <span id="location"></span>
+      </div>
+      <div class="video-wrapper">
+        <h2>VIDEO</h2>
+        <video id="myVideo" controls width="640" src="./includes/video/Coffee.mp4"></video>
+        <pre>Nota: Este video no tiene audio.</pre>
+        <span>Pulsa para modificar la barra de volumen.</span>
+        <button onclick="setVolume02()">VOL 0.2</button>
+        <button onclick="setVolume05()">VOL 0.5</button>
+        <button onclick="setVolume07()">VOL 0.7</button>
+        <button onclick="setVolume1()">VOL 1</button><br>
+        <span>Pulsa para cambiar el ancho del video a <b>800px</b> y de nuevo para volver a <b>640px</b> de origen.</span>
+        <button onclick="changeWidth()">PULSAR</button>
+
+      </div>
+      <script src="./includes/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Proyecto Diseño Interfaces Web</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>¡HOLA! soy el portfolio de ALEJANDRO MARQUEZ ;)</h1>
+            <h3>WEB DEVELOPER</h3>
+            <div class="bordertitle"></div>
+            <div class="wrap-head">
+                <div class="logo">
+                    <a href="index.html"><img src="includes/css/Logo Web2.png" alt="logo"></a>
+                </div>
+                <nav class="navbar">
+                    <!-- OPCIONES DE MENÚ -->
+                    <ul id="nav-list">
+                        <li id="nav-element1"><a href="#">Home</a></li>
+                        <li id="nav-element2"><a href="#">Trabajos</a></li>
+                        <li id="nav-element3"><a href="#">Sobre mí</a></li>
+                        <li id="nav-element4"><a href="#">Guía de estilos</a></li>
+                        <li id="nav-element5"><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- OVERLAY -->
+        <div id="myNav" class="overlay">
+
+            <!-- Botón para cerrar el overlay -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Contenido del overlay -->
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="#">TRABAJOS</a>
+                <a href="#">SOBRE MI</a>
+                <a href="#">GUIA DE ESTILOS</a>
+                <a href="#">CONTACTO</a>
+            </div>
+        </div>
+        <main>
+            
+        </main>
+        <footer>
+            <div>
+                <span>ALEX MÁRQUEZ WEB DEVELOPER &copy;</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function openNav() {
+            // Indica que el ancho va a ser del 100% cuando se abra
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            // Indica que el ancho va a ser del 0% (desaparece) cuando se hace clic en cerrar con X
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

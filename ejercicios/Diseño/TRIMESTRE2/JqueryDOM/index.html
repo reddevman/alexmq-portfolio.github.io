@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jquery Modificar DOM</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="span-wrapper">
+        <span id="pre"></span>
+        <span id="texto">X</span>
+        <span id="post"></span>
+      </div>
+      <div class="buttons-wrapper">
+        <button id="clean">Limpiar pantalla</button>
+        <button id="add1">Añadir 1</button>
+        <button id ="add9">Añadir 9</button>
+        <input type="number" id="inputNumber" autocomplete="off" min=0 max =9>
+        <button id="addNumber">Añadir antes (0-4) o después (5-9)</button>
+        <button id ="order">Ordenar números</button>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

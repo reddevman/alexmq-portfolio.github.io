@@ -1,0 +1,58 @@
+:root {
+    --opensans: 'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+}
+
+
+h1 {
+    font-family: var(--opensans);
+    border: 2px solid royalblue;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.audio-wrapper h2 {
+    font-family: var(--opensans);
+    color: white;
+    background: steelblue;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.audio-wrapper audio {
+    display: block;
+}
+
+.audio-wrapper button, span {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--raleway);
+    font-weight: 500;
+}
+
+.audio-wrapper #duration, #location {
+    font-weight: bold;
+}
+
+.video-wrapper {
+    margin-top: 100px;
+}
+
+.video-wrapper h2 {
+    font-family: var(--opensans);
+    color: white;
+    background: slateblue;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.video-wrapper button {
+    margin-top: 10px;
+}

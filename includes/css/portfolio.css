@@ -25,6 +25,7 @@
 .categories {
     height: 30%;
     width: 100%;
+    margin-top: 50px;
 }
 
 .categories img {
@@ -69,6 +70,9 @@
 .css,
 .cliente {
     display: table-cell;
+}
+
+.css a img {
     margin: 0 auto;
 }
 
@@ -99,6 +103,7 @@ a .fab:hover {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .apps-web a {
@@ -120,6 +125,10 @@ a .fab:hover {
 
 .apps-web h3 {
     margin-top: 30px;
+}
+
+footer {
+    position: relative;
 }
 
 @media (max-width:768px) {

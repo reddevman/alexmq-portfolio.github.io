@@ -85,6 +85,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .mapa iframe {
@@ -95,3 +96,7 @@ input[type=submit]:hover {
 .mapa iframe:hover {
     box-shadow: 4px 4px 1px var(--grisOscuro);
 }
+
+    footer {
+        position: relative;
+    }

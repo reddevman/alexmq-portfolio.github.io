@@ -56,10 +56,15 @@
 
 .content ol {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .content ol li {
     font-size: 20px;
     line-height: 40px;
     margin-left: 20px;
+}
+
+footer {
+    position: relative;
 }

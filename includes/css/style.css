@@ -30,7 +30,7 @@ body {
 
 main {
     flex: 1;
-    height: 95vh;
+    height: 100vh;
     padding: 10px;
     /*overflow: hidden;*/
 }
@@ -151,6 +151,12 @@ header a img {
     cursor: pointer;
     padding: 10px;
     text-shadow: 3px 3px #ccc;
+    transition: all .6s;
+    user-select: none;
+}
+
+#sticky-menu span:hover {
+    transform: rotate(90deg);
 }
 
 /* OVERLAY - Fondo */
@@ -199,19 +205,51 @@ header a img {
 /* OVERLAY - Botón cerrar */
 .overlay .closebtn {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
     top: 20px;
     right: 45px;
     font-size: 60px;
+    transition: all .6s;
+    user-select: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.overlay .closebtn:hover {
+    animation: rotating 2s linear infinite;
 }
 
 footer {
-    width: 100%;
+    /* width: 100%; */
     letter-spacing: 3px;
     font-weight: 200;
     font-family: var(--secondaryFont);
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* overflow: hidden; */
+
+    position: fixed;
     text-align: center;
-    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: black;
+    /* background: hsla(0, 0%, 86%, 0.781); */
+    padding: 10px;
+    padding-top: 5px;
 }
 
 @media screen and (max-width: 1436px) {
